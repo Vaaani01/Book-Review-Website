@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Book Review Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+         body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e8eaf6;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(90deg, #3f51b5, #5c6bc0);
+            padding: 10px 20px;
+            color: white;
+        }
+        header img {
+            height: 50px;
+            width: auto;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .section-title {
+            margin-bottom: 10px;
+            color: #333;
+            font-size: 1.5em;
+        }
+        .book-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .book-card {
+            background: white;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: calc(33% - 20px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .book-card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .book-card h3 {
+            font-size: 1.2em;
+            margin: 10px 0 5px;
+        }
+        .book-card p {
+            margin: 5px 0;
+            color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Book Review Website</h1>
+</header>
+
+<nav>
+    <a href="#featured">Featured Books</a>
+    <a href="#genres">Genres</a>
+    <a href="#reviews">Recent Reviews</a>
+    <a href="/login">Login</a>
+</nav>
+
+
+
+<div class="container">
+
+    <!-- Featured Books Section -->
+    <section id="featured">
+        <h2 class="section-title">Featured Books</h2>
+        <div class="book-grid">
+            <div class="book-card">
+                <img src="book1.jpg" alt="Book 1 Cover">
+                <h3>To Kill a Mockingbird</h3>
+                <p>Author: Harper Lee</p>
+                <p>Rating: ⭐⭐⭐⭐⭐</p>
+            </div>
+            <div class="book-card">
+                <img src="book2.jpg" alt="Book 2 Cover">
+                <h3>1984</h3>
+                <p>Author: George Orwell</p>
+                <p>Rating: ⭐⭐⭐⭐☆</p>
+            </div>
+            <div class="book-card">
+                <img src="book3.jpg" alt="Book 3 Cover">
+                <h3>The Great Gatsby</h3>
+                <p>Author: F. Scott Fitzgerald</p>
+                <p>Rating: ⭐⭐⭐⭐⭐</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Genres Section -->
+    <section id="genres">
+        <h2 class="section-title">Browse by Genre</h2>
+        <ul>
+            <li><a href="#">Fiction</a></li>
+            <li><a href="#">Dystopian</a></li>
+            <li><a href="#">Classics</a></li>
+            <li><a href="#">Fantasy</a></li>
+            <li><a href="#">Non-fiction</a></li>
+        </ul>
+    </section>
+
+    <!-- Recent Reviews Section -->
+    <section id="reviews">
+        <h2 class="section-title">Recent Reviews</h2>
+        <div>
+            <article>
+                <h3>The Alchemist</h3>
+                <p><strong>Reviewer:</strong> Jane Doe</p>
+                <p><strong>Rating:</strong> ⭐⭐⭐⭐☆</p>
+                <p>"An inspiring and motivational read that encourages readers to follow their dreams."</p>
+            </article>
+            <hr>
+            <article>
+                <h3>Brave New World</h3>
+                <p><strong>Reviewer:</strong> John Smith</p>
+                <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>
+                <p>"A thought-provoking exploration of a dystopian future."</p>
+            </article>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 Book Review Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

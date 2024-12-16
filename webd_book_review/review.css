@@ -1,0 +1,106 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    background: url('2.jpg') no-repeat center center fixed; 
+    background-size: cover; 
+    color: #2d3436;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: #ffffff71;
+    border-top: 5px solid #6c5ce7;
+}
+
+/* Section Heading */
+#submit h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #6c5ce7;
+    margin-bottom: 0.5rem;
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 1rem;
+    color: #2c2c2c;
+    margin-bottom: 1.5rem;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: #2d3436;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #dfe6e9;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    transition: all 0.3s ease-in-out;
+}
+
+form input:focus, form textarea:focus, form select:focus {
+    border: 1px solid #6c5ce7;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(108, 92, 231, 0.2);
+}
+
+/* Submit Button */
+.form-button {
+    display: inline-block;
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    background: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background: #5a4bcf;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    #submit h2 {
+        font-size: 1.8rem;
+    }
+
+    form input, form textarea, form select {
+        padding: 0.7rem;
+    }
+
+    form button {
+        padding: 0.7rem;
+    }
+}

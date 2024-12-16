@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Review</title>
+    <link rel="stylesheet" href="review.css">
+</head>
+<body>
+    <div class="container">
+        <section id="submit">
+            <h2>Submit Your Review</h2>
+            <p class="intro-text">Share your thoughts on the books you've read! Your reviews help others discover great stories.</p>
+            <form>
+                <label for="book-title">📚 Book Title:</label>
+                <input type="text" id="book-title" placeholder="Enter book title" required>
+
+                <label for="reviewer-name">📝 Your Name:</label>
+                <input type="text" id="reviewer-name" placeholder="Enter your name" required>
+
+                <label for="rating">⭐ Rating:</label>
+                <select id="rating" required>
+                    <option value="" disabled selected>Rate the book</option>
+                    <option value="1">5 ⭐</option>
+                    <option value="2">4 ⭐</option>
+                    <option value="3">3 ⭐</option>
+                    <option value="4">2 ⭐</option>
+                    <option value="5">1 ⭐</option>
+                </select>
+
+                <label for="review">💬 Your Review:</label>
+                <textarea id="review" rows="4" placeholder="Write your review here..." required></textarea>
+                <a href="index.html" class="form-button">Post My Review</a>
+
+            </form>
+        </section>
+    </div>
+</body>
+</html>

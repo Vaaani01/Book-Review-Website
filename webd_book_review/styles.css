@@ -1,0 +1,113 @@
+/* General body styling */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('1.jpg') no-repeat center center fixed; 
+    background-size: cover; 
+    color: #fff; 
+}
+/* Container styling */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    padding: 0 5%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for text contrast */
+}
+
+/* Info Section */
+.info-section {
+    color: #f4f4f4;
+    max-width: 40%;
+}
+
+.info-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #ffcc00; /* Elegant golden color */
+}
+
+.info-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.remarkable-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff6600; /* Highlighted orange text */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Login Section */
+.login-section {
+    background-color: rgba(223, 239, 255, 0.308); /* Semi-transparent for elegance */
+    color: rgb(255, 255, 255);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 35%; /* Center more effectively */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.login-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #ffcc00;
+}
+
+.login-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6600; /* Customize color */
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #e65c00; /* Customize hover color */
+}
+
+.login-section .signup {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.login-section .signup a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.login-section .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.login-section .social-icons a {
+    margin: 0 5px;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.login-section .social-icons a:hover {
+    color: #ff6600;
+}
