@@ -22,6 +22,17 @@ body {
     border-top: 5px solid #6c5ce7;
 }
 
+.star {
+    font-size: 2rem;
+    color: #dfe6e9; /* Default star color */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.star.active, .star:hover ~ .star {
+    color: #fdcb6e; /* Highlight stars */
+}
+
+
 /* Section Heading */
 #submit h2 {
     text-align: center;

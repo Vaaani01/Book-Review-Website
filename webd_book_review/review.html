@@ -18,7 +18,18 @@
                 <label for="reviewer-name">📝 Your Name:</label>
                 <input type="text" id="reviewer-name" placeholder="Enter your name" required>
 
-                <label for="rating">⭐ Rating:</label>
+                <label for="rating">Rating:</label>
+                    <div id="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                <input type="hidden" id="rating" name="rating" required>
+
+
+                <!--<label for="rating">⭐ Rating:</label>
                 <select id="rating" required>
                     <option value="" disabled selected>Rate the book</option>
                     <option value="1">5 ⭐</option>
@@ -26,7 +37,7 @@
                     <option value="3">3 ⭐</option>
                     <option value="4">2 ⭐</option>
                     <option value="5">1 ⭐</option>
-                </select>
+                </select>-->
 
                 <label for="review">💬 Your Review:</label>
                 <textarea id="review" rows="4" placeholder="Write your review here..." required></textarea>
@@ -35,5 +46,43 @@
             </form>
         </section>
     </div>
+    <script>
+        const stars = document.querySelectorAll(".star");
+const ratingInput = document.getElementById("rating");
+
+stars.forEach((star) => {
+    // On hover (mouseover)
+    star.addEventListener("mouseover", () => {
+        const value = star.getAttribute("data-value");
+        highlightStars(value);
+    });
+
+    // On click (to select rating)
+    star.addEventListener("click", () => {
+        const value = star.getAttribute("data-value");
+        ratingInput.value = value; // Set the hidden input value
+        highlightStars(value);
+    });
+
+    // On mouse leave (reset stars based on selected rating)
+    star.addEventListener("mouseleave", () => {
+        const selectedValue = ratingInput.value || 0;
+        highlightStars(selectedValue);
+    });
+});
+
+// Function to highlight stars up to the selected value
+function highlightStars(count) {
+    stars.forEach((star) => {
+        if (star.getAttribute("data-value") <= count) {
+            star.style.color = "#fdcb6e"; // Yellow for selected/hovered stars
+        } else {
+            star.style.color = "#dfe6e9"; // Grey for unselected stars
+        }
+    });
+}
+
+        </script>
+        
 </body>
 </html>
