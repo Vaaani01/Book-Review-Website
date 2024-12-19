@@ -16,7 +16,7 @@ html {
     width: 100%;
     background: linear-gradient(90deg, #ff8d63c7, #0400ff93);
     color: white;
-    padding: 0.2rem 20rem;
+    padding: 1.2rem 20rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,7 +51,7 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
-    gap: 20px;
+    gap: 30px;
 }
 
 .nav-links li {
@@ -63,7 +63,7 @@ body {
     color: #fff;
     padding: 10px 15px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 5px;
     transition: 0.3s;
 }

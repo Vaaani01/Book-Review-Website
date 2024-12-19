@@ -156,5 +156,14 @@
         </p>
     </footer>
     </section>
+    <script>
+        document.querySelector('a[href="#genres"]').addEventListener("click", function(e) {
+            e.preventDefault();
+            document.querySelector("#genres").scrollIntoView({
+                behavior: "smooth"
+            });
+        });
+        </script>
+
 </body>
 </html>
